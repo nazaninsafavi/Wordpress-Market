@@ -1,0 +1,1839 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Task Three</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+        <link href="Task-3.css" type="text/css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js" ></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" ></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    
+    </head>
+    <body>
+        <div id="mask"></div>
+        <nav class="navbar navbar-expand-md bg-light" id="Scroll-nav">
+            <div class="container-fluid">
+                <button class="navbar-toggler px-0" type="button" data-mdb-toggle="collapse"
+                    data-mdb-target="#navbarExampleOnHover" aria-controls="navbarExampleOnHover" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                 </button>
+                <div class="collapse navbar-collapse" id="navbarExampleOnHover">
+                    <div class="d-flex flex-row Links">
+                        <div class="p-0 flex-row">
+                            <ul class="navbar-nav me-auto ps-lg-0" >
+                                <!-- Navbar dropdown -->
+                                <li class="nav-item dropdown dropdown-hover position-static">
+                                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-mdb-toggle="dropdown" aria-expanded="false">
+                                    محبوب ترین ها
+                                  </a>
+                                  <!-- Dropdown menu -->
+                                  <div class="dropdown-menu w-100" aria-labelledby="navbarDropdown" 
+                                    style="margin:0;padding:0">
+                        
+                                    <div class="container-fluid w-80">
+                                      <div class="row my-4">
+                                        <div class="col-md-3  mb-3 mb-lg-0">
+                                          <div class="list-group ">
+                                            <a href="#" class=" list-group-item-action">
+                                                <img src="imgs/popular-theme.svg" class="nav-img"> 
+                                                محبوبترین قالب ها
+                                            </a>
+                                          </div>
+                                        </div>
+                                        <div class="col-md-3 mb-3 mb-lg-0">
+                                          <div class="list-group">
+                                            <a href="#" class=" list-group-item-action">
+                                                <img src="imgs/popular-theme.svg" class="nav-img"> 
+                                                محبوبترین افزونه ها
+                                            </a>
+                                          
+                                          </div>
+                                        </div>
+                                        <div class="col-md-3 mb-3 mb-md-0">
+                                          <div class="list-group">
+                                            <a href="#" class="list-group-item-action">
+                                                <img src="imgs/iran.svg" class="nav-img"> 
+                                                محبوبترین  بسته های ایرانی
+                                            </a>
+                                          </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                          <div class="list-group">
+                                            <a href="#" class="list-group-item-action">
+                                                <img src="imgs/offers.svg" class="nav-img"> 
+                                                  بسته های شگفت انگیز ژاکت
+                                            </a>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </li>
+                                <li class="nav-item dropdown dropdown-hover position-static">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                      data-mdb-toggle="dropdown" aria-expanded="false">
+                                        قالب وردپرس
+                                    </a>
+                                    <!-- Dropdown menu -->
+                                    <div class="dropdown-menu w-100 mt-0" aria-labelledby="navbarDropdown" style="border-top-left-radius: 0;
+                                                    border-top-right-radius: 0;
+                                                    position:absolute;
+                                                    right:30px;
+                                                    top:60px;
+                                                      
+                                                    ">
+                          
+                                        <div class="container-fluid">
+                                            <div class="row my-4">
+                                            <div class="col-md-3 col-lg-2 mb-lg-0">
+                                                <div class="list-group list-group-flush">
+                                                <a href="#" class="list-group-item list-group-item-action">
+                                                    <img src="imgs/popular-theme.svg" class="nav-img"> 
+                                                      قالب وردپرس
+                                                </a>
+                                                <a href="#" class="list-group-item list-group-item-action">
+                                                    <img src="imgs/educate.svg" class="nav-img"> 
+                                                      قالب آموزشی
+                                                </a>
+                                                <a href="#" class="list-group-item list-group-item-action">
+                                                    <img src="imgs/single.svg" class="nav-img"> 
+                                                      قالب وبلاگ ورپرس
+                                                </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3  col-lg-2 mb-0">
+                                                <div class="list-group list-group-flush">
+                                                <a href="#" class="list-group-item list-group-item-action">
+                                                    <img src="imgs/woo.svg" class="nav-img"> 
+                                                      قالب فروشگاهی 
+                                                </a>
+                                                <a href="#" class="list-group-item list-group-item-action">
+                                                    <img src="imgs/company.svg" class="nav-img"> 
+                                                      قالب خبری
+                                                </a>
+                                                <a href="#" class="list-group-item list-group-item-action">
+                                                    <img src="imgs/form-builder.svg" class="nav-img"> 
+                                                      قالب فروش فایل
+                                                </a>
+                                                
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3  col-lg-2 mb-md-0">
+                                                <div class="list-group list-group-flush">
+                                                <a href="#" class="list-group-item list-group-item-action">
+                                                    <img src="imgs/multi.svg" class="nav-img"> 
+                                                    قالب شرکتی
+                                                </a>
+                                                <a href="#" class="list-group-item list-group-item-action">
+                                                    <img src="imgs/sound.svg" class="nav-img"> 
+                                                    قالب آگهی و دایرکتوری
+                                                </a>
+                                                <a href="#" class="list-group-item list-group-item-action">
+                                                    <img src="imgs/seo.svg" class="nav-img"> 
+                                                    قالب دیجی کالا
+                                                </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 col-lg-2">
+                                                <div class="list-group list-group-flush">
+                                                <a href="#" class="list-group-item list-group-item-action">
+                                                    <img src="imgs/offers.svg" class="nav-img"> 
+                                                        قالب المنتور
+                                                </a>
+                                                <a href="#" class="list-group-item list-group-item-action">
+                                                    <img src="imgs/download.svg" class="nav-img"> 
+                                                        قالب دانلودی
+                                                </a>
+                                                <a href="#" class="list-group-item list-group-item-action">
+                                                    <img src="imgs/admin-templates-html.svg" class="nav-img"> 
+                                                        قالب رزومه وردپرس
+                                                </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 col-lg-2">
+                                                <div class="list-group list-group-flush">
+                                                <a href="#" class="list-group-item list-group-item-action">
+                                                    <img src="imgs/multi.svg" class="nav-img"> 
+                                                        قالب چندمنظوره
+                                                </a>
+                                                <a href="#" class="list-group-item list-group-item-action">
+                                                    <img src="imgs/personal.svg" class="nav-img"> 
+                                                        قالب شخصی
+                                                </a>
+                                                <a href="#" class="list-group-item list-group-item-action">
+                                                    <img src="imgs/single (1).svg" class="nav-img"> 
+                                                        دموهای آماده
+                                                </a>
+                                                </div>
+                                            </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown dropdown-hover position-static">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                      data-mdb-toggle="dropdown" aria-expanded="false">
+                                        افزونه وردپرس
+                                    </a>
+                                    <!-- Dropdown menu -->
+                                    <div class="dropdown-menu w-100 mt-0" aria-labelledby="navbarDropdown" style="border-top-left-radius: 0;
+                                                    border-top-right-radius: 0;
+                                                    position:absolute;
+                                                    right:30px;
+                                                    top:60px;
+                                                      
+                                                    ">
+                          
+                                        <div class="container-fluid">
+                                            <div class="row my-4">
+                                            <div class="col-md-6 col-lg-2 mb-3 mb-lg-0">
+                                                <div class="list-group list-group-flush">
+                                                <a href="#" class="list-group-item list-group-item-action">
+                                                    <img src="imgs/popular-theme.svg" class="nav-img"> 
+                                                       افزونه وردپرس
+                                                </a>
+                                                <a href="#" class="list-group-item list-group-item-action">
+                                                    <img src="imgs/marketing.svg" class="nav-img"> 
+                                                       مارکتینگ
+                                                </a>
+                                                <a href="#" class="list-group-item list-group-item-action">
+                                                    <img src="imgs/elementor.svg" class="nav-img"> 
+                                                        افزودنی های المنتور
+                                                </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-lg-2 mb-3 mb-lg-0">
+                                                <div class="list-group list-group-flush">
+                                                <a href="#" class="list-group-item list-group-item-action">
+                                                    <img src="imgs/landing-pages.svg" class="nav-img"> 
+                                                       افزونه سیو وردپرس 
+                                                </a>
+                                                <a href="#" class="list-group-item list-group-item-action">
+                                                    <img src="imgs/address.webp" class="nav-img"> 
+                                                       افزونه پنل کاربری
+                                                </a>
+                                                <a href="#" class="list-group-item list-group-item-action">
+                                                    <img src="imgs/offers.svg" class="nav-img"> 
+                                                        افزونه درگاه پرداخت
+                                                </a>
+                                                
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-lg-2 mb-3 mb-md-0">
+                                                <div class="list-group list-group-flush">
+                                                <a href="#" class="list-group-item list-group-item-action">
+                                                    <img src="imgs/woo.svg" class="nav-img"> 
+                                                     افزونه های ووکامرس
+                                                </a>
+                                                <a href="#" class="list-group-item list-group-item-action">
+                                                    <img src="imgs/mobile-app.svg" class="nav-img"> 
+                                                      اپلیکیشن ساز 
+                                                </a>
+                                                <a href="#" class="list-group-item list-group-item-action">
+                                                    <img src="imgs/popular-theme.svg" class="nav-img"> 
+                                                      به روز رسان هوشمند
+                                                </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-lg-2">
+                                                <div class="list-group list-group-flush">
+                                                <a href="#" class="list-group-item list-group-item-action">
+                                                    <img src="imgs/page-builder.svg" class="nav-img"> 
+                                                         افزونه صفحه ساز 
+                                                </a>
+                                                <a href="#" class="list-group-item list-group-item-action">
+                                                    <img src="imgs/social-networking.svg" class="nav-img"> 
+                                                         شبکه های اجتماعی
+                                                </a>
+                                                <a href="#" class="list-group-item list-group-item-action">
+                                                    <img src="imgs/elementor.svg" class="nav-img"> 
+                                                          افزونه المنتور پرو
+                                                </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-lg-2">
+                                                <div class="list-group list-group-flush">
+                                                <a href="#" class="list-group-item list-group-item-action">
+                                                    <img src="imgs/multi.svg" class="nav-img"> 
+                                                         افزونه فرم ساز
+                                                </a>
+                                                <a href="#" class="list-group-item list-group-item-action">
+                                                    <img src="imgs/personal.svg" class="nav-img"> 
+                                                        افزونه امنیتی
+                                                </a>
+                                                </div>
+                                            </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown dropdown-hover position-static">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                      data-mdb-toggle="dropdown" aria-expanded="false">
+                                         اسکریپت
+                                    </a>
+                                    <!-- Dropdown menu -->
+                                    <div class="dropdown-menu w-100 mt-0" aria-labelledby="navbarDropdown" style="border-top-left-radius: 0;
+                                                    border-top-right-radius: 0;
+                                                    position:absolute;
+                                                    right:30px;
+                                                    top:60px;
+                                                      
+                                                    ">
+                          
+                                        <div class="container-fluid script">
+                                            <div class="row my-4">
+                                            <div class="col-md-6 col-lg-4 mb-3 mb-lg-0">
+                                                <div class="list-group list-group-flush">
+                                                <a href="#" class="list-group-item list-group-item-action">
+                                                    <img src="imgs/utilities.svg" class="nav-img"> 
+                                                       اسکریپت
+                                                </a>
+                                                
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-lg-4 mb-3 mb-lg-0">
+                                                <div class="list-group list-group-flush">
+                                                <a href="#" class="list-group-item list-group-item-action">
+                                                    <img src="imgs/seo.svg" class="nav-img"> 
+                                                       اسکریپت مدیریت جامع یا CRM 
+                                                </a>
+                                                
+                                                
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-lg-4 mb-3 mb-md-0">
+                                                <div class="list-group list-group-flush">
+                                                <a href="#" class="list-group-item list-group-item-action">
+                                                    <img src="imgs/woo.svg" class="nav-img"> 
+                                                     اسکریپت فروشگاهی
+                                                </a>
+                                                
+                                                </div>
+                                            </div>
+                                            
+                                            
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown dropdown-hover position-static">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                      data-mdb-toggle="dropdown" aria-expanded="false">
+                                        قالب HTML
+                                    </a>
+                                    <!-- Dropdown menu -->
+                                    <div class="dropdown-menu w-100 mt-0" aria-labelledby="navbarDropdown" style="border-top-left-radius: 0;
+                                                    border-top-right-radius: 0;
+                                                    position:absolute;
+                                                    right:30px;
+                                                    top:60px;
+                                                      
+                                                    ">
+                          
+                                        <div class="container-fluid">
+                                            <div class="row my-4">
+                                            <div class="col-md-6 col-lg-2 mb-3 mb-lg-0">
+                                                <div class="list-group list-group-flush">
+                                                <a href="#" class="list-group-item list-group-item-action">
+                                                    <img src="imgs/single (1).svg" class="nav-img"> 
+                                                      قالب HTML
+                                                </a>
+                                                <a href="#" class="list-group-item list-group-item-action">
+                                                    <img src="imgs/landing-pages.svg" class="nav-img"> 
+                                                      قالب لندینگ یا صفحه فرود
+                                                </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-lg-2 mb-3 mb-lg-0">
+                                                <div class="list-group list-group-flush">
+                                                <a href="#" class="list-group-item list-group-item-action">
+                                                    <img src="imgs/form-builder.svg" class="nav-img"> 
+                                                      قالب 404 (HTML) 
+                                                </a>
+                                                <a href="#" class="list-group-item list-group-item-action">
+                                                    <img src="imgs/company.svg" class="nav-img"> 
+                                                      قالب پنل مدیریتی
+                                                </a>
+                                                
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-lg-2 mb-3 mb-md-0">
+                                                <div class="list-group list-group-flush">
+                                                <a href="#" class="list-group-item list-group-item-action">
+                                                    <img src="imgs/multi.svg" class="nav-img"> 
+                                                    قالب در دست ساخت
+                                                </a>
+                                                <a href="#" class="list-group-item list-group-item-action">
+                                                    <img src="imgs/single (1).svg" class="nav-img"> 
+                                                    قالب تک صفحه ای 
+                                                </a>
+                                                
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-lg-2">
+                                                <div class="list-group list-group-flush">
+                                                <a href="#" class="list-group-item list-group-item-action">
+                                                    <img src="imgs/multi.svg" class="nav-img"> 
+                                                        قالب شرکتی
+                                                </a>
+                                                <a href="#" class="list-group-item list-group-item-action">
+                                                    <img src="imgs/admin-templates-html.svg" class="nav-img"> 
+                                                        قالب رزومه(HTML)
+                                                </a>
+                                                
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-lg-2">
+                                                <div class="list-group list-group-flush">
+                                                <a href="#" class="list-group-item list-group-item-action">
+                                                    <img src="imgs/woo.svg" class="nav-img"> 
+                                                        قالب فروشگاهی
+                                                </a>
+                                                </div>
+                                            </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown dropdown-hover position-static">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                      data-mdb-toggle="dropdown" aria-expanded="false">
+                                         بلاگ
+                                    </a>
+                                    <!-- Dropdown menu -->
+                                    <div class="dropdown-menu w-100 mt-0" aria-labelledby="navbarDropdown" style="border-top-left-radius: 0;
+                                                    border-top-right-radius: 0;
+                                                    position:absolute;
+                                                    right:30px;
+                                                    top:60px;
+                                                      
+                                                    ">
+                          
+                                        <div class="container-fluid">
+                                            <div class="row my-4">
+                                            <div class="col-md-6 col-lg-3 mb-3 mb-lg-0">
+                                                <div class="list-group list-group-flush">
+                                                <a href="#" class="list-group-item list-group-item-action">
+                                                    <img src="imgs/popular-theme.svg" class="nav-img"> 
+                                                      قالب وردپرس
+                                                </a>
+                                                <a href="#" class="list-group-item list-group-item-action">
+                                                    <img src="imgs/educate.svg" class="nav-img"> 
+                                                      قالب آموزشی
+                                                </a>
+                                                <a href="#" class="list-group-item list-group-item-action">
+                                                    <img src="imgs/single.svg" class="nav-img"> 
+                                                      قالب وبلاگ ورپرس
+                                                </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-lg-3 mb-3 mb-lg-0">
+                                                <div class="list-group list-group-flush">
+                                                <a href="#" class="list-group-item list-group-item-action">
+                                                    <img src="imgs/woo.svg" class="nav-img"> 
+                                                      قالب فروشگاهی 
+                                                </a>
+                                                <a href="#" class="list-group-item list-group-item-action">
+                                                    <img src="imgs/company.svg" class="nav-img"> 
+                                                      قالب خبری
+                                                </a>
+                                                <a href="#" class="list-group-item list-group-item-action">
+                                                    <img src="imgs/form-builder.svg" class="nav-img"> 
+                                                      قالب فروش فایل
+                                                </a>
+                                                
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-lg-3 mb-3 mb-md-0">
+                                                <div class="list-group list-group-flush">
+                                                <a href="#" class="list-group-item list-group-item-action">
+                                                    <img src="imgs/multi.svg" class="nav-img"> 
+                                                    قالب شرکتی
+                                                </a>
+                                                <a href="#" class="list-group-item list-group-item-action">
+                                                    <img src="imgs/sound.svg" class="nav-img"> 
+                                                    قالب آگهی و دایرکتوری
+                                                </a>
+                                                <a href="#" class="list-group-item list-group-item-action">
+                                                    <img src="imgs/seo.svg" class="nav-img"> 
+                                                    قالب دیجی کالا
+                                                </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-lg-3">
+                                                <div class="list-group list-group-flush">
+                                                <a href="#" class="list-group-item list-group-item-action">
+                                                    <img src="imgs/offers.svg" class="nav-img"> 
+                                                        قالب المنتور
+                                                </a>
+                                                <a href="#" class="list-group-item list-group-item-action">
+                                                    <img src="imgs/download.svg" class="nav-img"> 
+                                                        قالب دانلودی
+                                                </a>
+                                                <a href="#" class="list-group-item list-group-item-action">
+                                                    <img src="imgs/admin-templates-html.svg" class="nav-img"> 
+                                                        قالب رزومه وردپرس
+                                                </a>
+                                                </div>
+                                            </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown dropdown-hover position-static">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                      data-mdb-toggle="dropdown" aria-expanded="false">
+                                         ژاکت سرویس
+                                    </a>
+                                    <!-- Dropdown menu -->
+                                    <div class="dropdown-menu w-100 mt-0" aria-labelledby="navbarDropdown" style="border-top-left-radius: 0;
+                                                    border-top-right-radius: 0;
+                                                    position:absolute;
+                                                    right:30px;
+                                                    top:60px;
+                                                      
+                                                    ">
+                          
+                                        <div class="container-fluid">
+                                            <div class="row my-4">
+                                            <div class="col-md-6 col-lg-3 mb-3 mb-lg-0">
+                                                <div class="list-group list-group-flush">
+                                                <a href="#" class="list-group-item list-group-item-action">
+                                                    <img src="imgs/popular-theme.svg" class="nav-img"> 
+                                                      قالب وردپرس
+                                                </a>
+                                                <a href="#" class="list-group-item list-group-item-action">
+                                                    <img src="imgs/educate.svg" class="nav-img"> 
+                                                      قالب آموزشی
+                                                </a>
+                                                <a href="#" class="list-group-item list-group-item-action">
+                                                    <img src="imgs/single.svg" class="nav-img"> 
+                                                      قالب وبلاگ ورپرس
+                                                </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-lg-3 mb-3 mb-lg-0">
+                                                <div class="list-group list-group-flush">
+                                                <a href="#" class="list-group-item list-group-item-action">
+                                                    <img src="imgs/woo.svg" class="nav-img"> 
+                                                      قالب فروشگاهی 
+                                                </a>
+                                                <a href="#" class="list-group-item list-group-item-action">
+                                                    <img src="imgs/company.svg" class="nav-img"> 
+                                                      قالب خبری
+                                                </a>
+                                                <a href="#" class="list-group-item list-group-item-action">
+                                                    <img src="imgs/form-builder.svg" class="nav-img"> 
+                                                      قالب فروش فایل
+                                                </a>
+                                                
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-lg-3 mb-3 mb-md-0">
+                                                <div class="list-group list-group-flush">
+                                                <a href="#" class="list-group-item list-group-item-action">
+                                                    <img src="imgs/multi.svg" class="nav-img"> 
+                                                    قالب شرکتی
+                                                </a>
+                                                <a href="#" class="list-group-item list-group-item-action">
+                                                    <img src="imgs/sound.svg" class="nav-img"> 
+                                                    قالب آگهی و دایرکتوری
+                                                </a>
+                                                <a href="#" class="list-group-item list-group-item-action">
+                                                    <img src="imgs/seo.svg" class="nav-img"> 
+                                                    قالب دیجی کالا
+                                                </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-lg-3">
+                                                <div class="list-group list-group-flush">
+                                                <a href="#" class="list-group-item list-group-item-action">
+                                                    <img src="imgs/offers.svg" class="nav-img"> 
+                                                        قالب المنتور
+                                                </a>
+                                                <a href="#" class="list-group-item list-group-item-action">
+                                                    <img src="imgs/download.svg" class="nav-img"> 
+                                                        قالب دانلودی
+                                                </a>
+                                                <a href="#" class="list-group-item list-group-item-action">
+                                                    <img src="imgs/admin-templates-html.svg" class="nav-img"> 
+                                                        قالب رزومه وردپرس
+                                                </a>
+                                                </div>
+                                            </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown dropdown-hover position-static">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                      data-mdb-toggle="dropdown" aria-expanded="false">
+                                         ژاکت آکادمی
+                                    </a>
+                                    <!-- Dropdown menu -->
+                                    <div class="dropdown-menu w-100 mt-0" aria-labelledby="navbarDropdown" style="border-top-left-radius: 0;
+                                                    border-top-right-radius: 0;
+                                                    position:absolute;
+                                                    right:30px;
+                                                    top:60px;
+                                                      
+                                                    ">
+                          
+                                        <div class="container-fluid">
+                                            <div class="row my-4">
+                                            <div class="col-md-6 col-lg-3 mb-3 mb-lg-0">
+                                                <div class="list-group list-group-flush">
+                                                <a href="#" class="list-group-item list-group-item-action">
+                                                    <img src="imgs/popular-theme.svg" class="nav-img"> 
+                                                      قالب وردپرس
+                                                </a>
+                                                <a href="#" class="list-group-item list-group-item-action">
+                                                    <img src="imgs/educate.svg" class="nav-img"> 
+                                                      قالب آموزشی
+                                                </a>
+                                                <a href="#" class="list-group-item list-group-item-action">
+                                                    <img src="imgs/single.svg" class="nav-img"> 
+                                                      قالب وبلاگ ورپرس
+                                                </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-lg-3 mb-3 mb-lg-0">
+                                                <div class="list-group list-group-flush">
+                                                <a href="#" class="list-group-item list-group-item-action">
+                                                    <img src="imgs/woo.svg" class="nav-img"> 
+                                                      قالب فروشگاهی 
+                                                </a>
+                                                <a href="#" class="list-group-item list-group-item-action">
+                                                    <img src="imgs/company.svg" class="nav-img"> 
+                                                      قالب خبری
+                                                </a>
+                                                <a href="#" class="list-group-item list-group-item-action">
+                                                    <img src="imgs/form-builder.svg" class="nav-img"> 
+                                                      قالب فروش فایل
+                                                </a>
+                                                
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-lg-3 mb-3 mb-md-0">
+                                                <div class="list-group list-group-flush">
+                                                <a href="#" class="list-group-item list-group-item-action">
+                                                    <img src="imgs/multi.svg" class="nav-img"> 
+                                                    قالب شرکتی
+                                                </a>
+                                                <a href="#" class="list-group-item list-group-item-action">
+                                                    <img src="imgs/sound.svg" class="nav-img"> 
+                                                    قالب آگهی و دایرکتوری
+                                                </a>
+                                                <a href="#" class="list-group-item list-group-item-action">
+                                                    <img src="imgs/seo.svg" class="nav-img"> 
+                                                    قالب دیجی کالا
+                                                </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-lg-3">
+                                                <div class="list-group list-group-flush">
+                                                <a href="#" class="list-group-item list-group-item-action">
+                                                    <img src="imgs/offers.svg" class="nav-img"> 
+                                                        قالب المنتور
+                                                </a>
+                                                <a href="#" class="list-group-item list-group-item-action">
+                                                    <img src="imgs/download.svg" class="nav-img"> 
+                                                        قالب دانلودی
+                                                </a>
+                                                <a href="#" class="list-group-item list-group-item-action">
+                                                    <img src="imgs/admin-templates-html.svg" class="nav-img"> 
+                                                        قالب رزومه وردپرس
+                                                </a>
+                                                </div>
+                                            </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                
+                            </ul>
+                               
+                                
+                            
+                            
+                        </div>       
+                    </div>
+                </div>    
+                <div class="nav-icons">
+                    <div class="d-flex flex-row">
+                        <div class="p-1">
+                            <a href="#"><i class="material-icons above" style="font-size: 28px;">search</i></a>
+                        </div>
+                        <div class="p-1">
+                            <a href="javascript:void(0)" onclick="openNav();"><i class="material-icons above"  id="sidebarCollapse" style="font-size: 28px;">business_center</i></a>
+                        </div>
+                        <div class="p-1">
+                            <p style="font-size: 28px; padding-top:10px">|</p>
+                        </div>
+                        <div class="p-1">
+                            <button type="button" class="btn btn-light mt-2"> ورود</button>
+                        </div>
+                        <div class="p-1">
+                            <button type="button" class="btn btn-warning mt-2">ثبت نام</button>
+                        </div>
+                         
+
+                    </div>
+
+                </div>   
+                
+            </div>
+        </nav>
+        <div id="mySidenav" class="sidenav">
+            <div class="d-flex flex-row sidenav-con">
+                <div class="p-0">
+                    <h5 id="headside" style="color: gray;padding-right: 10px;">شما این محصولات را انتخاب کرده اید</h5>
+                </div>
+                <div class="p-0">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                </div>
+            </div>
+            <hr color="black">
+            <div class="nothing" id="nothing">
+                <h6>محصول در سبد خرید وجود ندارد</h6>
+            </div>
+            <div class="purchase">
+                <table class="show-cart table">
+          
+                </table>
+                <div> &nbsp; &nbsp; مجموع: &nbsp; تومان &nbsp; <span class="total-cart"></span></div>
+                <button class="clear-cart btn btn-danger" style="margin-top:20px;margin-right:8px"
+                >پاک کردن همه </button></div>    
+            </div>
+           
+        </div>
+        <div class="alert" id="alert">
+            <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+            <strong>محصول به سبد خرید اضافه شد !</strong>
+        </div>
+        
+
+      
+
+
+
+        <div class="main">
+            <div class="flex flex-row logo">
+                <div class="p-1 logoImg">
+                    <img src="imgs/zheket_logo.svg" width="130px" height="130px">
+                </div>
+    
+            </div>
+            <div class="flex flex-row">
+                <div class="search">
+                <input type="text" class="search-input" id="filter" placeholder="برای مثال: آنفولد" name="" > 
+                    <a href="#" class="search-icon">
+                        <i class="fa fa-search search-icon"></i>
+                    </a>    
+                </div>
+                <section class="search-navbar">
+                    <ul class="liveSearchBar" id="live">
+                        <li><a href="#">هاب هوشمند</a></li>
+                        <li><a href="#">افزونه پارس المنت</a></li>
+                        <li><a href="#">افزونه دیدگاه پلاس</a></li>
+                        <li><a href="#">افزونه ووکامرس</a></li>
+                        <li><a href="#">قالب شرکتی مجیکال</a></li>
+                        <li><a href="#">قالب شرکتی سروین</a></li>
+                        <li><a href="#">قالب فروشگاهی تتیس</a></li>
+                        <li><a href="#">افزونه پیامک وردپرس</a></li>
+                        <li><a href="#">قالب شرکتی آوات</a></li>
+                        <li><a href="#">قالب وردپرس ایمپرزا</a></li>
+                        <li><a href="#">قالب شرکتی دارنا</a></li>
+                        <li><a href="#">قالب فروشگاهی ایران تجارت</a></li>
+                        <li><a href="#">قالب شرکتی سایرون</a></li>
+                    </ul>
+                </section> 
+            </div>
+            <div class="flex flex-row titles">
+                <div class="title-one">
+                    <h4 class="ti-one">معتبرترین مارکت تخصصی قالب و افزونه وردپرس</h4>
+                </div>
+                <div class="title-two">
+                    <h6 class="ti-two">هر محصول را با 6 ماه گارانتی بازگشت وجه،پشتیبانی تضمین شده و به روزرسانی خودکار از پیشخوان</h6>
+                </div>
+                <div class="title-three">
+                    <h6 class="ti-three">وردپرس از ژاکت دریافت کنید.</h6>
+                </div>
+            </div>
+        </div>
+        <ul class="nav nav-tabs tabs-first" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">پرفروش ترین</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">جدیدترین</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">آخرین به روز رسانی ها</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="last-tab" data-bs-toggle="tab" data-bs-target="#last" type="button" role="tab" aria-controls="last" aria-selected="false">تخفیف دارها</button>
+            </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                <div class="container-fluid">
+                    <div class="row Imgs">
+                        <div class="col-md-12 col-sm-12">
+                            <a href="#"><img src="imgs/smarthub.png" class="realImg"></a>
+                            <a href="#"><img src="imgs/elementor.png" class="realImg"></a>
+                            <a href="#"><img src="imgs/woodmark.png" class="realImg"></a>
+                            <a href="#"><img src="imgs/ym.png" class="realImg"></a>
+                            <a href="#"><img src="imgs/seo.png" class="realImg"></a>
+                            <a href="#"><img src="imgs/digits.png" class="realImg"></a>
+                            <a href="#" ><img src="imgs/astra.png" class="realImg"></a>
+                            <a href="#"><img src="imgs/dominopay.png" class="realImg"></a>
+                            <a href="#"><img src="imgs/rankmath.png" class="realImg"></a>
+                        </div>
+                    </div>
+                    <div class="row Imgs">
+                        <div class="col-md-12 col-sm-12">
+                            <a href="#"><img src="imgs/wp.jpg" class="realImg"></a>
+                            <a href="#"><img src="imgs/cf.png" class="realImg"></a>
+                            <a href="#"><img src="imgs/oyar.png" class="realImg"></a>
+                            <a href="#"><img src="imgs/vira.png" class="realImg"></a>
+                            <a href="#"><img src="imgs/cpar.png" class="realImg"></a>
+                            <a href="#"><img src="imgs/kish.png" class="realImg"></a>
+                            <a href="#"><img src="imgs/druco.jpg" class="realImg"></a>
+                            <a href="#"><img src="imgs/bookley.webp" class="realImg"></a>
+                            <a href="#"><img src="imgs/panel.webp" class="realImg"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                <div class="container-fluid">
+                    <div class="row Imgs">
+                        <div class="col-md-12 col-sm-12">
+                            <a href="#"><img src="imgs/ftech.webp" class="realImg"></a>
+                            <a href="#"><img src="imgs/gheymat.webp" class="realImg"></a>
+                            <a href="#"><img src="imgs/address.webp" class="realImg"></a>
+                            <a href="#"><img src="imgs/siro3.webp" class="realImg"></a>
+                            <a href="#"><img src="imgs/factorp.webp" class="realImg"></a>
+                            <a href="#"><img src="imgs/estrerdad.png" class="realImg"></a>
+                            <a href="#"><img src="imgs/shekar.webp" class="realImg"></a>
+                            <a href="#"><img src="imgs/shomaresh.jpg" class="realImg"></a>
+                            <a href="#"><img src="imgs/azmoon.png" class="realImg"></a>
+                        </div>
+                    </div>
+                    <div class="row Imgs">
+                        <div class="col-md-12 col-sm-12">
+                            <a href="#"><img src="imgs/taknews.png" class="realImg"></a>
+                            <a href="#"><img src="imgs/parselem.png" class="realImg"></a>
+                            <a href="#"><img src="imgs/bashga.png" class="realImg"></a>
+                            <a href="#"><img src="imgs/nimbaha.jpg" class="realImg"></a>
+                            <a href="#"><img src="imgs/troman.png" class="realImg"></a>
+                            <a href="#"><img src="imgs/lifo.png" class="realImg"></a>
+                            <a href="#"><img src="imgs/soltech.png" class="realImg"></a>
+                            <a href="#"><img src="imgs/woo4.jpg" class="realImg"></a>
+                            <a href="#"><img src="imgs/disa.png" class="realImg"></a>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                <div class="container-fluid">
+                    <div class="row Imgs">
+                        <div class="col-md-12 col-sm-12">
+                            <a href="#"><img src="imgs/diamond.webp" class="realImg"></a>
+                            <a href="#"><img src="imgs/shans.webp" class="realImg"></a>
+                            <a href="#"><img src="imgs/yuth.webp" class="realImg"></a>
+                            <a href="#"><img src="imgs/wordwebp.webp" class="realImg"></a>
+                            <a href="#"><img src="imgs/marsule.webp" class="realImg"></a>
+                            <a href="#"><img src="imgs/noako.webp" class="realImg"></a>
+                            <a href="#"><img src="imgs/chaty.webp" class="realImg"></a>
+                            <a href="#"><img src="imgs/panel.webp" class="realImg"></a>
+                            <a href="#"><img src="imgs/map.webp" class="realImg"></a>
+                        </div>
+                    </div>
+                    <div class="row Imgs">
+                        <div class="col-md-12 col-sm-12">
+                            <a href="#"><img src="imgs/estrerdad.png" class="realImg"></a>
+                            <a href="#"><img src="imgs/pro.webp" class="realImg"></a>
+                            <a href="#"><img src="imgs/rethemewebp.webp" class="realImg"></a>
+                            <a href="#"><img src="imgs/iamge.webp" class="realImg"></a>
+                            <a href="#"><img src="imgs/teta.webp" class="realImg"></a>
+                            <a href="#"><img src="imgs/onumwebp.webp" class="realImg"></a>
+                            <a href="#"><img src="imgs/dinakala.webp" class="realImg"></a>
+                            <a href="#"><img src="imgs/woo5webp.webp" class="realImg"></a>
+                            <a href="#"><img src="imgs/jet.webp" class="realImg"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="last" role="tabpanel" aria-labelledby="last-tab">...</div>
+        </div>     
+    
+           
+      
+        
+        
+        <div class="d-flex flex-row justify-content-center see-all">
+            <div class="p-1">
+                <button class="btn btn-light all" type="button">مشاهده همه</button>
+            </div>
+        </div>
+        <div class="tak">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-12">
+                        <div class="mahsul">
+                            <div class="p-1 picture">
+                                <img class="dImg-one" src="imgs/dokan.webp">
+                                <img class="dImg-two" src="imgs/dokan.webp">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <h4 class="DokanText">دکان بیزینس | dokan Business</h4>
+                        <div class="star">
+                            <div class="p-1 pt-3">
+                                <p class="stext">امتیاز خریداران: 5،00 از 3 رای</p>
+                            </div>
+                            <div class="p-1 ml-auto text-center">
+                                <img src="imgs/background.png" width="30px" height="30px">
+                                <img src="imgs/background.png" width="30px" height="30px">
+                                <img src="imgs/background.png" width="30px" height="30px">
+                                <img src="imgs/background.png" width="30px" height="30px">
+                                <img src="imgs/background.png" width="30px" height="30px">
+                            </div>
+                        </div>
+                        <div class="bordertext">
+                            <div class="p-2">
+                                <div class="d-flex flex-row">
+                                    <div class="p-1">
+                                        <i class="material-icons" style="color:white;font-size:65px">business_center</i>
+                                    </div>
+                                    <div class="pt-4 d-flex flex-column f-1">
+                                        <div class="p-0"><p class="first-t" style="line-height:10px;">131</p></div>
+                                        <div class="p-0"><p class="second-t">فروش ها</p></div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="pt-4 ">
+                                <div class="d-flex flex-column">
+                                    <div class="p-0"><p class="first-t" style="line-height:10px;">299,000</p></div>
+                                    <div class="p-0 text-center"><p class="second-t">تومان</p></div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="d-flex flex-row justify-content-center" style="margin-top: 50px;margin-right:20px">
+                            <button class="btn btn-warning check-btn"><i class="material-icons" style="font-size:25px;vertical-align: bottom;
+                                padding-left: 10px;padding-top:10px;color: whitesmoke;">visibility</i>مشاهده محصول</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div> 
+        </div>       
+               
+              
+    
+        <div class="d-flex flex-row ir-products">
+            <div class="p-1">
+                <div class="d-flex flex-row">
+                    <div class="p-1">
+                        <img src="imgs/iran.svg" width="70px" height="70px" style="padding-top: 10px;">
+                    </div>
+                    <div class="p-1">
+                        <div class="d-flex flex-column">
+                            <div class="p-1">
+                                <h4>برترین محصولات ایرانی</h4>
+                            </div>
+                            <div class="p-1">
+                                <h5>the Best Iranian Products </h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="p-1 second-tabs">
+                <nav>
+                    <div class="nav nav-tabs" id="nav-tab-two" role="tablist">
+                      <button class="nav-link active" id="nav-best-tab" data-bs-toggle="tab" data-bs-target="#nav-best" type="button" role="tab" aria-controls="nav-best" aria-selected="true">پرفروش ترین</button>
+                      <button class="nav-link" id="nav-new-tab" data-bs-toggle="tab" data-bs-target="#nav-new" type="button" role="tab" aria-controls="nav-new" aria-selected="false">جدیدترین</button>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-best" role="tabpanel" aria-labelledby="nav-best-tab">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-12">
+                            <div class="card" >
+                                <img class="card-img-top" src="imgs/hub.png" alt="Card image cap">
+                                <div class="over-img">
+                                    <div class="d-flex flex-row flex-shrink-1 over-img-div">
+                                        <div class="p-0 num-one">
+                                            <img class="circle" src="imgs/hubimg.png">
+                                        </div>
+                                        <div class="p-0">
+                                            <p class="pover">ژاکت</p>
+                                            <p class="pover-two">مرجع تخصصی محصولات و خدمات</p>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">افزونه هاب هوشمند(رایگان)  </h5>
+                                    <p class="hidden">افزونه رایگان اسمارت هاب ارتباط دهنده
+                                         سایت به سرویس های بین المللی جهت رفع تحریم ها و اختلالات سایت های وردپرسی است.</p>
+                                    <hr color="gray">
+                                    <div class="d-flex flex-row card-content">
+                                        <div class="p-1 text"><p>2871 دانلود</p></div>
+                                        <div class="p-1"><p>4.56<img src="imgs/background.png" width="20px" height="20px"></p></div>
+                                        <div class="p-1"> <span class="value">رایگان</span></div>
+                                    </div>
+                                    <div class="d-flex flex-row justify-content-center hidden-btn">
+                                        <a href="#" data-name="افزونه هاب هوشمند" data-price="0" class="add-to-cart btn btn-warning" style="width:300px">افزودن به سبد خرید</a>
+                                    </div>
+                                  
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-12">
+                            <div class="card" >
+                                <img class="card-img-top" src="imgs/plato.webp" alt="Card image cap">
+                                <div class="over-img">
+                                    <div class="d-flex flex-row flex-shrink-1 over-img-div">
+                                        <div class="p-0 num-one">
+                                            <img class="circle" src="imgs/plato-2.webp">
+                                        </div>
+                                        <div class="p-0">
+                                            <p class="pover">پلاتو</p>
+                                            <p class="pover-two">مرجع تخصصی محصولات و خدمات</p>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="card-body">
+                                  <h5 class="card-title">افزونه پنل کاربری پلاتو </h5>
+                                  <p class="hidden">افزونه رایگان اسمارت هاب ارتباط دهنده
+                                    سایت به سرویس های بین المللی جهت رفع تحریم ها و اختلالات سایت های وردپرسی است.</p>
+                                  <hr color="gray">
+                                    <div class="d-flex flex-row card-content">
+                                        <div class="p-1 text"><p>2871 دانلود</p></div>
+                                        <div class="p-1"><p>4.56<img src="imgs/background.png" width="20px" height="20px"></p></div>
+                                        <div class="p-1"> <p class="value">39.800 تومان</p></div>
+                                    </div>
+                                    <div class="d-flex flex-row justify-content-center hidden-btn">
+                                        <a href="#" data-name=" افزونه پنل کاربری پلاتو" data-price="39800" class="add-to-cart btn btn-warning" style="width:300px">افزودن به سبد خرید</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-12">
+                            <div class="card" >
+                                <img class="card-img-top" src="imgs/studiare.jpg" alt="Card image cap">
+                                <div class="over-img">
+                                    <div class="d-flex flex-row flex-shrink-1 over-img-div">
+                                        <div class="p-0 num-one">
+                                            <img class="circle" src="imgs/krauos-2.webp">
+                                        </div>
+                                        <div class="p-0">
+                                            <p class="pover">استادیار</p>
+                                            <p class="pover-two">مرجع تخصصی محصولات و خدمات</p>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="card-body">
+                                  <h5 class="card-title"> قالب فروش دوره آموزشی استادیار </h5>
+                                  <p class="hidden">افزونه رایگان اسمارت هاب ارتباط دهنده
+                                    سایت به سرویس های بین المللی جهت رفع تحریم ها و اختلالات سایت های وردپرسی است.</p>
+                                  <hr color="gray">
+                                    <div class="d-flex flex-row card-content">
+                                        <div class="p-1 text"><p>2871 دانلود</p></div>
+                                        <div class="p-1"><p>4.56<img src="imgs/background.png" width="20px" height="20px"></p></div>
+                                        <div class="p-1"> <p class="value">390.000 تومان</p></div>
+                                    </div>
+                                    <div class="d-flex flex-row justify-content-center hidden-btn">
+                                        <a href="#" data-name="قالب فروش دوره آموزشی استادیار" data-price="390000" class="add-to-cart btn btn-warning" style="width:300px">افزودن به سبد خرید</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-12">
+                            <div class="card" >
+                                <img class="card-img-top" src="imgs/char.jpg" alt="Card image cap">
+                                <div class="over-img">
+                                    <div class="d-flex flex-row flex-shrink-1 over-img-div">
+                                        <div class="p-0 num-one">
+                                            <img class="circle" src="imgs/charsogh.webp">
+                                        </div>
+                                        <div class="p-0">
+                                            <p class="pover">چهارسوق</p>
+                                            <p class="pover-two"> قالب مشابه دیوار</p>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="card-body">
+                                  <h5 class="card-title">چهارسوق | قالب نیازمندی وردپرس | قالب مشابه دیوار</h5>
+                                  <p class="hidden">افزونه رایگان اسمارت هاب ارتباط دهنده
+                                    سایت به سرویس های بین المللی جهت رفع تحریم ها و اختلالات سایت های وردپرسی است.</p>
+                                  <hr color="gray">
+                                  <div class="d-flex flex-row card-content">
+                                      <div class="p-1 text"><p>2871 دانلود</p></div>
+                                      <div class="p-1"><p>4.56<img src="imgs/background.png" width="20px" height="20px"></p></div>
+                                      <div class="p-1"> <p class="value">419.000 تومان</p></div>
+                                  </div>
+                                  <div class="d-flex flex-row justify-content-center hidden-btn">
+                                    <a href="#" data-name="قالب چهارسوق" data-price="419000" class="add-to-cart btn btn-warning" style="width:300px">افزودن به سبد خرید</a>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="nav-new" role="tabpanel" aria-labelledby="nav-new-tab">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-12">
+                            <div class="card" >
+                                <img class="card-img-top" src="imgs/siroh.webp" alt="Card image cap">
+                                <div class="over-img">
+                                    <div class="d-flex flex-row flex-shrink-1 over-img-div">
+                                        <div class="p-0 num-one">
+                                            <img class="circle" src="imgs/hubimg.png">
+                                        </div>
+                                        <div class="p-0">
+                                            <p class="pover">ژاکت</p>
+                                            <p class="pover-two">مرجع تخصصی محصولات و خدمات</p>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="card-body">
+                                  <h5 class="card-title">قالب HTML متاورسی سیرو</h5>
+                                  <p class="hidden">افزونه رایگان اسمارت هاب ارتباط دهنده
+                                    سایت به سرویس های بین المللی جهت رفع تحریم ها و اختلالات سایت های وردپرسی است.</p>
+                                  <hr color="gray">
+                                  <div class="d-flex flex-row card-content">
+                                      <div class="p-1 text"><p>0 فروش</p></div> |
+                                      <div class="p-1"> <p class="value">119.000 تومان</p></div>
+                                  </div>
+                                  <div class="d-flex flex-row justify-content-center hidden-btn">
+                                    <a href="#" data-name="قالب HTML سیرو" data-price="119000" class="add-to-cart btn btn-warning" style="width:300px">افزودن به سبد خرید</a>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-12">
+                            <div class="card" >
+                                <img class="card-img-top" src="imgs/taknews.webp" alt="Card image cap">
+                                <div class="over-img">
+                                    <div class="d-flex flex-row flex-shrink-1 over-img-div">
+                                        <div class="p-0 num-one">
+                                            <img class="circle" src="imgs/hubimg.png">
+                                        </div>
+                                        <div class="p-0">
+                                            <p class="pover">ژاکت</p>
+                                            <p class="pover-two">مرجع تخصصی محصولات و خدمات</p>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">قالب خبری تک نیوز | قالب مجله ای </h5>
+                                    <p class="hidden">افزونه رایگان اسمارت هاب ارتباط دهنده
+                                        سایت به سرویس های بین المللی جهت رفع تحریم ها و اختلالات سایت های وردپرسی است.</p>
+                                    <hr color="gray">
+                                    <div class="d-flex flex-row card-content">
+                                        <div class="p-1 text"><p>2 فروش</p></div> |
+                                        <div class="p-1"><p class="value">88.000 تومان</p></div>
+                                    </div>
+                                    <div class="d-flex flex-row justify-content-center hidden-btn">
+                                        <a href="#" data-name="قالب خبری تک نیوز" data-price="88000" class="add-to-cart btn btn-warning" style="width:300px">افزودن به سبد خرید</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-12">
+                            <div class="card" >
+                                <img class="card-img-top" src="imgs/pars.webp" alt="Card image cap">
+                                <div class="over-img">
+                                    <div class="d-flex flex-row flex-shrink-1 over-img-div">
+                                        <div class="p-0 num-one">
+                                            <img class="circle" src="imgs/hubimg.png">
+                                        </div>
+                                        <div class="p-0">
+                                            <p class="pover">ژاکت</p>
+                                            <p class="pover-two">مرجع تخصصی محصولات و خدمات</p>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="card-body">
+                                  <h5 class="card-title">افزونه پارس المنت</h5>
+                                  <p class="hidden">افزونه رایگان اسمارت هاب ارتباط دهنده
+                                    سایت به سرویس های بین المللی جهت رفع تحریم ها و اختلالات سایت های وردپرسی است.</p>
+                                  <hr color="gray">
+                                  <div class="d-flex flex-row card-content">
+                                      <div class="p-1 text"><p>26 فروش</p></div> |
+                                      <div class="p-1"><p class="value">59.600 تومان</p></div>
+                                  </div>
+                                  <div class="d-flex flex-row justify-content-center hidden-btn">
+                                    <a href="#" data-name="افزونه پارس المنت" data-price="59000" class="add-to-cart btn btn-warning" style="width:300px">افزودن به سبد خرید</a>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-12">
+                            <div class="card" >
+                                <img class="card-img-top" src="imgs/vclub.webp" alt="Card image cap">
+                                <div class="over-img">
+                                    <div class="d-flex flex-row flex-shrink-1 over-img-div">
+                                        <div class="p-0 num-one">
+                                            <img class="circle" src="imgs/hubimg.png">
+                                        </div>
+                                        <div class="p-0">
+                                            <p class="pover">ژاکت</p>
+                                            <p class="pover-two">مرجع تخصصی محصولات و خدمات</p>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="card-body">
+                                  <h5 class="card-title">افزونه امتیازات و پاداش وی کلاب</h5>
+                                  <p class="hidden">افزونه رایگان اسمارت هاب ارتباط دهنده
+                                    سایت به سرویس های بین المللی جهت رفع تحریم ها و اختلالات سایت های وردپرسی است.</p>
+                                  <hr color="gray">
+                                  <div class="d-flex flex-row card-content">
+                                      <div class="p-1 text"><p>1 فروش</p></div> |
+                                      <div class="p-1"><p class="value">129.000 تومان</p></div>
+                                  </div>
+                                  <div class="d-flex flex-row justify-content-center hidden-btn">
+                                    <a href="#" data-name="افزونه وی کلاب" data-price="129000" class="add-to-cart btn btn-warning" style="width:300px">افزودن به سبد خرید</a>
+                                </div>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          
+        </div>  
+        <div class="d-flex flex-row justify-content-center see-all">
+            <div class="p-1">
+                <button class="btn btn-light all" type="button">مشاهده همه</button>
+            </div>
+        </div>
+        <div class="tak">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-12">
+                        <div class="mahsul">
+                            <div class="p-1 picture">
+                                <img class="dImg-one" src="imgs/flatsome.webp">
+                                <img class="dImg-two" src="imgs/flatsome.webp">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <h4 class="DokanText">قالب فلت سام | Flatsome</h4>
+                        <div class="star">
+                            <div class="p-1 pt-3">
+                                <p class="stext">امتیاز خریداران: 3،68 از 57 رای</p>
+                            </div>
+                            <div class="p-1 ml-auto text-center">
+                                <img src="imgs/background.png" width="30px" height="30px">
+                                <img src="imgs/background.png" width="30px" height="30px">
+                                <img src="imgs/background.png" width="30px" height="30px">
+                                <img src="imgs/background.png" width="30px" height="30px">
+                                <img src="imgs/background.png" width="30px" height="30px">
+                            </div>
+                        </div>
+                        <div class="bordertext">
+                            <div class="p-2">
+                                <div class="d-flex flex-row">
+                                    <div class="p-1">
+                                        <i class="material-icons" style="color:white;font-size:65px">business_center</i>
+                                    </div>
+                                    <div class="pt-4 d-flex flex-column f-1">
+                                        <div class="p-0"><p class="first-t" style="line-height:10px;">5893</p></div>
+                                        <div class="p-0"><p class="second-t">فروش ها</p></div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="pt-4 ">
+                                <div class="d-flex flex-column">
+                                    <div class="p-0"><p class="first-t" style="line-height:10px;">226,850</p></div>
+                                    <div class="p-0 text-center"><p class="second-t">تومان</p></div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="d-flex flex-row justify-content-center" style="margin-top: 50px;margin-right:20px">
+                            <button class="btn btn-warning check-btn"><i class="material-icons" style="font-size:25px;vertical-align: bottom;
+                                padding-left:10px;padding-top:10px;color: whitesmoke;">visibility</i>مشاهده محصول</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div> 
+        </div>
+        <div class="d-flex flex-row in-products">
+            <div class="p-1">
+                <div class="d-flex flex-row">
+                    <div class="p-1">
+                        <img src="imgs/multi.svg" width="70px" height="70px" style="padding-top: 7px;">
+                    </div>
+                    <div class="p-1">
+                        <div class="d-flex flex-column">
+                            <div class="p-1">
+                                <h4 style="line-height: 25px;">برترین  قالب های شرکتی</h4>
+                            </div>
+                            <div class="p-1">
+                                <h5>the Best Corporate Themes</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="p-1 second-tabs">
+                <nav>
+                    <div class="nav nav-tabs" id="nav-tab-two" role="tablist">
+                      <button class="nav-link active" id="nav-best-tab" data-bs-toggle="tab" data-bs-target="#nav-best" type="button" role="tab" aria-controls="nav-best" aria-selected="true">پرفروش ترین</button>
+                      <button class="nav-link" id="nav-new-tab" data-bs-toggle="tab" data-bs-target="#nav-new" type="button" role="tab" aria-controls="nav-new" aria-selected="false">جدیدترین</button>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="first-row">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-3 col-sm-12">
+                        <div class="card" >
+                            <img class="card-img-top" src="imgs/Tejarat.png" alt="Card image cap">
+                            <div class="over-img">
+                                <div class="d-flex flex-row flex-shrink-1 over-img-div">
+                                    <div class="p-0 num-one">
+                                        <img class="circle" src="imgs/miladjis.webp">
+                                    </div>
+                                    <div class="p-0">
+                                        <p class="pover">ایران تجارت</p>
+                                        <p class="pover-two">مرجع تخصصی محصولات و خدمات</p>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">ایران تجارت | قالب شرکتی فروشگاهی</h5>
+                                <p class="hidden">افزونه رایگان اسمارت هاب ارتباط دهنده
+                                    سایت به سرویس های بین المللی جهت رفع تحریم ها و اختلالات سایت های وردپرسی است.</p>
+                                <hr color="gray">
+                                <div class="d-flex flex-row card-content">
+                                    <div class="p-1 text"><p> 479 فروش</p></div>
+                                    <div class="p-1"><p>4.8<img src="imgs/background.png" width="20px" height="20px"></p></div>
+                                    <div class="p-1"> <p class="value">74.700 تومان</p></div>
+                                </div>
+                                <div class="d-flex flex-row justify-content-center hidden-btn">
+                                    <a href="#" data-name="قالب شرکتی فروشگاهی" data-price="74700" class="add-to-cart btn btn-warning" style="width:300px">افزودن به سبد خرید</a>
+                                </div>
+                              
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12">
+                        <div class="card" >
+                            <img class="card-img-top" src="imgs/Karaos.jpg" alt="Card image cap">
+                            <div class="over-img">
+                                <div class="d-flex flex-row flex-shrink-1 over-img-div">
+                                    <div class="p-0 num-one">
+                                        <img class="circle" src="imgs/milad.webp">
+                                    </div>
+                                    <div class="p-0">
+                                        <p class="pover">کاراوس</p>
+                                        <p class="pover-two">مرجع تخصصی محصولات و خدمات</p>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">قالب شرکتی کاراوس </h5>
+                                <p class="hidden">افزونه رایگان اسمارت هاب ارتباط دهنده
+                                    سایت به سرویس های بین المللی جهت رفع تحریم ها و اختلالات سایت های وردپرسی است.</p>
+                                <hr color="gray">
+                                <div class="d-flex flex-row card-content">
+                                    <div class="p-1 text"><p>2192 فروش</p></div>
+                                    <div class="p-1"><p>4.6<img src="imgs/background.png" width="20px" height="20px"></p></div>
+                                    <div class="p-1"> <p class="value">195.300 تومان</p></div>
+                                </div>
+                                <div class="d-flex flex-row justify-content-center hidden-btn">
+                                    <a href="#" data-name=" قالب شرکتی کاراوس" data-price="195300" class="add-to-cart btn btn-warning" style="width:300px">افزودن به سبد خرید</a>
+                                </div>
+                              
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12">
+                        <div class="card" >
+                            <img class="card-img-top" src="imgs/zeptech.webp" alt="Card image cap">
+                            <div class="over-img">
+                                <div class="d-flex flex-row flex-shrink-1 over-img-div">
+                                    <div class="p-0 num-one">
+                                        <img class="circle" src="imgs/zzzwebp.webp">
+                                    </div>
+                                    <div class="p-0">
+                                        <p class="pover">زپتک</p>
+                                        <p class="pover-two">مرجع تخصصی محصولات و خدمات</p>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">قالب شرکتی زپتک  </h5>
+                                <p class="hidden">افزونه رایگان اسمارت هاب ارتباط دهنده
+                                    سایت به سرویس های بین المللی جهت رفع تحریم ها و اختلالات سایت های وردپرسی است.</p>
+                                <hr color="gray">
+                                <div class="d-flex flex-row card-content">
+                                    <div class="p-1 text"><p>229 فروش </p></div>
+                                    <div class="p-1"><p>4.56<img src="imgs/background.png" width="20px" height="20px"></p></div>
+                                    <div class="p-1"> <p class="value">219.000 تومان</p></div>
+                                </div>
+                                <div class="d-flex flex-row justify-content-center hidden-btn">
+                                    <a href="#" data-name="قالب شرکتی زپتک" data-price="219000" class="add-to-cart btn btn-warning" style="width:300px">افزودن به سبد خرید</a>
+                                </div>
+                              
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="col-md-3 col-sm-12">
+                        <div class="card" >
+                            <img class="card-img-top" src="imgs/servin.webp" alt="Card image cap">
+                            <div class="over-img">
+                                <div class="d-flex flex-row flex-shrink-1 over-img-div">
+                                    <div class="p-0 num-one">
+                                        <img class="circle" src="imgs/dw.webp">
+                                    </div>
+                                    <div class="p-0">
+                                        <p class="pover">سروین</p>
+                                        <p class="pover-two">مرجع تخصصی محصولات و خدمات</p>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">قالب شرکتی و چندمنظوره سروین  </h5>
+                                <p class="hidden">افزونه رایگان اسمارت هاب ارتباط دهنده
+                                    سایت به سرویس های بین المللی جهت رفع تحریم ها و اختلالات سایت های وردپرسی است.</p>
+                                <hr color="gray">
+                                <div class="d-flex flex-row card-content">
+                                    <div class="p-1 text"><p>259 فروش</p></div>
+                                    <div class="p-1"><p>5.00<img src="imgs/background.png" width="20px" height="20px"></p></div>
+                                    <div class="p-1"><p class="value">249.000 تومان</p></div>
+                                </div>
+                                <div class="d-flex flex-row justify-content-center hidden-btn">
+                                    <a href="#" data-name="قالب شرکتی سروین" data-price="249000" class="add-to-cart btn btn-warning" style="width:300px">افزودن به سبد خرید</a>
+                                </div>
+                              
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex flex-row justify-content-center more">
+            <div class="p-1">
+                <button class="btn btn-light all" type="button" id="show-more">مشاهده همه</button>
+            </div>
+        </div>
+        <div class="second-row">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-3 col-sm-12">
+                        <div class="card" >
+                            <img class="card-img-top" src="imgs/myco.webp" alt="Card image cap">
+                            <div class="over-img">
+                                <div class="d-flex flex-row flex-shrink-1 over-img-div">
+                                    <div class="p-0 num-one">
+                                        <img class="circle" src="imgs/hubimg.png">
+                                    </div>
+                                    <div class="p-0">
+                                        <p class="pover">ژاکت</p>
+                                        <p class="pover-two">مرجع تخصصی محصولات و خدمات</p>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title"> قالب شرکتی مایکو </h5>
+                                <p class="hidden">افزونه رایگان اسمارت هاب ارتباط دهنده
+                                    سایت به سرویس های بین المللی جهت رفع تحریم ها و اختلالات سایت های وردپرسی است.</p>
+                                <hr color="gray">
+                                <div class="d-flex flex-row card-content">
+                                    <div class="p-1 text"><p> 450 فروش</p></div>
+                                    <div class="p-1"><p>4.8<img src="imgs/background.png" width="20px" height="20px"></p></div>
+                                    <div class="p-1"><p class="value">224.000 تومان</p></div>
+                                </div>
+                                <div class="d-flex flex-row justify-content-center hidden-btn">
+                                    <a href="#" data-name="قالب شرکتی مایکو" data-price="224000" class="add-to-cart btn btn-warning" style="width:300px">افزودن به سبد خرید</a>
+                                </div>
+                              
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12">
+                        <div class="card" >
+                            <img class="card-img-top" src="imgs/ryse.webp" alt="Card image cap">
+                            <div class="over-img">
+                                <div class="d-flex flex-row flex-shrink-1 over-img-div">
+                                    <div class="p-0 num-one">
+                                        <img class="circle" src="imgs/hubimg.png">
+                                    </div>
+                                    <div class="p-0">
+                                        <p class="pover">ژاکت</p>
+                                        <p class="pover-two">مرجع تخصصی محصولات و خدمات</p>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">قالب دیجیتال مارکتینگ رایس </h5>
+                                <p class="hidden">افزونه رایگان اسمارت هاب ارتباط دهنده
+                                    سایت به سرویس های بین المللی جهت رفع تحریم ها و اختلالات سایت های وردپرسی است.</p>
+                                <hr color="gray">
+                                <div class="d-flex flex-row card-content">
+                                    <div class="p-1 text"><p>272 فروش</p></div>
+                                    <div class="p-1"><p>3.8<img src="imgs/background.png" width="20px" height="20px"></p></div>
+                                    <div class="p-1"><p class="value">319.000 تومان</p></div>
+                                </div>
+                                <div class="d-flex flex-row justify-content-center hidden-btn">
+                                    <a href="#" data-name="قالب  مارکتینگ رایس" data-price="319000" class="add-to-cart btn btn-warning" style="width:300px">افزودن به سبد خرید</a>
+                                </div>
+                              
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12">
+                        <div class="card" >
+                            <img class="card-img-top" src="imgs/view.webp" alt="Card image cap">
+                            <div class="over-img">
+                                <div class="d-flex flex-row flex-shrink-1 over-img-div">
+                                    <div class="p-0 num-one">
+                                        <img class="circle" src="imgs/hubimg.png">
+                                    </div>
+                                    <div class="p-0">
+                                        <p class="pover">ژاکت</p>
+                                        <p class="pover-two">مرجع تخصصی محصولات و خدمات</p>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">قالب سِو و بازاریابی ویولایتکس </h5>
+                                <p class="hidden">افزونه رایگان اسمارت هاب ارتباط دهنده
+                                    سایت به سرویس های بین المللی جهت رفع تحریم ها و اختلالات سایت های وردپرسی است.</p>
+                                <hr color="gray">
+                                <div class="d-flex flex-row card-content">
+                                    <div class="p-1 text"><p>577 فروش </p></div>
+                                    <div class="p-1"><p>5.2<img src="imgs/background.png" width="20px" height="20px"></p></div>
+                                    <div class="p-1"> <p class="value">229.000 تومان</p></div>
+                                </div>
+                                <div class="d-flex flex-row justify-content-center hidden-btn">
+                                    <a href="#" data-name="قالب  ویولایتکس" data-price="229000" class="add-to-cart btn btn-warning" style="width:300px">افزودن به سبد خرید</a>
+                                </div>
+                              
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="col-md-3 col-sm-12">
+                        <div class="card" >
+                            <img class="card-img-top" src="imgs/startit.webp" alt="Card image cap">
+                            <div class="over-img">
+                                <div class="d-flex flex-row flex-shrink-1 over-img-div">
+                                    <div class="p-0 num-one">
+                                        <img class="circle" src="imgs/hubimg.png">
+                                    </div>
+                                    <div class="p-0">
+                                        <p class="pover">ژاکت</p>
+                                        <p class="pover-two">مرجع تخصصی محصولات و خدمات</p>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">قالب وردپرس </h5>
+                                <p class="hidden">افزونه رایگان اسمارت هاب ارتباط دهنده
+                                    سایت به سرویس های بین المللی جهت رفع تحریم ها و اختلالات سایت های وردپرسی است.</p>
+                                <hr color="gray">
+                                <div class="d-flex flex-row card-content">
+                                    <div class="p-1 text"><p>336 فروش</p></div>
+                                    <div class="p-1"><p>4.4<img src="imgs/background.png" width="20px" height="20px"></p></div>
+                                    <div class="p-1"><p class="value">249.000 تومان</p></div>
+                                </div>
+                                <div class="d-flex flex-row justify-content-center hidden-btn">
+                                    <a href="#" data-name="قالب وردپرس" data-price="249000" class="add-to-cart btn btn-warning" style="width:300px">افزودن به سبد خرید</a>
+                                </div>
+                              
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex flex-row justify-content-center less">
+                <div class="p-1">
+                    <button class="btn btn-light all" type="button" id="show-less"> بستن</button>
+                </div>
+            </div>
+        </div>
+        <div class="tik4">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-4 col-sm-12">
+                        <div class="tikimg">
+                            <div class="p-1">
+                                <img src="imgs/tik4.jpg"  class="timg">
+                            </div>
+                            <div class="p-1">
+                                <div class="d-flex flex-column">
+                                    <div class="p-1"><p class="tikt">Tik4</p></div>
+                                    <div class="p-1"><p class="tikd">همراهی شما افتخار ماست</p></div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="d-flex">
+                            <div class="p-1"><p style="color: aliceblue;padding-right:10px">محصولات ایرانی با پشتیبانی حرفه ای</p></div>
+                        </div>
+                        <div class="d-flex flex-row">
+                            <div class="p-1 ions">
+                                <div class="ion-1 ion"><ion-icon name="alarm-outline" class="ion-icon"></ion-icon>
+                                    <span class="tooltiptext">بیش از پنج سال عضویت در ژاکت</span>
+                                </div>
+                                <div class="ion-2 ion"><ion-icon name="server-outline" class="ion-icon"></ion-icon>
+                                    <span class="tooltiptext">فروش 50 تا 100 ملیون تومان</span>
+                                </div>
+                                <div class="ion-3 ion"><ion-icon name="card-outline" class="ion-icon"></ion-icon>
+                                    <span class="tooltiptext">کمتر از 5 خرید از ژاکت</span>
+                                </div>
+                                <div class="ion-4 ion"><ion-icon name="hourglass-outline" class="ion-icon"></ion-icon>
+                                    <span class="tooltiptext">12 تا 24 ماه فروش محصولات</span>
+                                </div>
+                                <div class="ion-5 ion"><ion-icon name="bag-handle-outline" class="ion-icon"></ion-icon>
+                                    <span class="tooltiptext">تعداد فروش 500 تا 1000</span>
+                                </div>
+                                <div class="ion-6 ion"><ion-icon name="grid-outline" class="ion-icon"></ion-icon>
+                                    <span class="tooltiptext">تعدد محصولات کمتر از 5</span>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="d-flex" style="padding-top:50px">
+                            <div class="p-1">
+                                <button class="btn btn-light watch"><i class="material-icons inline-icon">visibility</i>مشاهده فروشگاه</button>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="col-md-7 col-sm-12 swipper-div">
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide"><img src="imgs/woo1.webp"></div>
+                              <div class="swiper-slide"><img src="imgs/kourosh.png"></div>
+                              <div class="swiper-slide"><img src="imgs/marketing.webp"></div>
+                              <div class="swiper-slide"><img src="imgs/woo1.webp"></div>
+                              <div class="swiper-slide"><img src="imgs/tejarat1.png"></div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center">
+            <div class="p-1">
+                <p class="read">از وبلاگ ژاکت بخوانید</p>
+            </div>
+        </div>
+        <div class="blog">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-3 col-sm-12">
+                        <div class="card-two">
+                            <img class="card-img-top" src="imgs/insta.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h6 class="card-title">آموزش اینستاگرام، آموزش کامل اینستا طبق آخرین آپدیت 2022</h6>
+                                <hr color="gray">
+                                <div class="d-flex flex-row card-content-two">
+                                    <div class="overlay">
+                                        <button type="button" class="btn btn-warning ">بیشتر بخوانید</button>
+                                    </div>
+                                    <div class="p-1 text"><p class="insta">اینستاگرام</p></div>
+                                    <div class="p-1"> <p class="insta">15 خرداد 1401 </p></div>
+                                </div>
+                              
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12">
+                        <div class="card-two" >
+                            <img class="card-img-top" src="imgs/delete.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h6 class="card-title">دیلیت اکانت اینستاگرام، حذف اکانت اینستا به صورت دایمی و موقت</h6>
+                                <hr color="gray">
+                                <div class="d-flex flex-row card-content-two">
+                                    <div class="overlay">
+                                        <button type="button" class="btn btn-warning ">بیشتر بخوانید</button>
+                                    </div>
+                                    <div class="p-1 text"><p class="insta">اینستاگرام</p></div>
+                                    <div class="p-1"> <p class="insta">27 اردیبهشت 1401</p></div>
+                                </div>
+                              
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12">
+                        <div class="card-two" >
+                            <img class="card-img-top" src="imgs/wordpress.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h6 class="card-title">آموزش وردپرس</h6>
+                                <hr color="gray">
+                                <div class="d-flex flex-row card-content-two">
+                                    <div class="overlay">
+                                        <button type="button" class="btn btn-warning ">بیشتر بخوانید</button>
+                                    </div>
+                                    <div class="p-1 text"><p class="insta">وردپرس</p></div>
+                                    <div class="p-1"> <p class="insta">27 اردیبهشت 1400</p></div>
+                                </div>  
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12">
+                        <div class="card-two" >
+                            <img class="card-img-top" src="imgs/wp2.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h6 class="card-title">وردپرس چیست؟</h6>
+                                <hr color="gray">
+                                <div class="d-flex flex-row card-content-two">
+                                    <div class="overlay">
+                                        <button type="button" class="btn btn-warning ">بیشتر بخوانید</button>
+                                    </div>
+                                    <div class="p-1 text"><p class="insta">وردپرس</p></div>
+                                    <div class="p-1"> <p class="insta">30 فروردین 1400</p></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            
+        </div>
+        <div class="d-flex flex-row justify-content-center see-all">
+            <div class="p-1">
+                <button class="btn btn-dark all-last" type="button"> مشاهده همه مطالب وبلاگ </button>
+            </div>
+        </div>
+        
+        <footer class="footer">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-5 col-sm-12">
+                        <div class="d-flex justify-content-center">
+                            <div class="Flinks">
+                                <a href="#" class="flink">قوانین ژاکت</a>
+                                <a href="#" class="flink">به روزرسان هوشمند</a>
+                                <a href="#" class="flink">لوگو</a>
+                                <a href="#" class="flink">همکاری با ما</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-12">
+                        <div class="cimg">
+                            <img src="imgs/zheket_logo.svg" class="fimg" >
+                        </div>
+                    </div>
+                    <div class="col-md-5 col-sm-12">
+                        <div class="d-flex justify-content-center">
+                            <div class="Flinks">
+                                <a href="#" class="flink">فروشنده شوید</a>
+                                <a href="#" class="flink">مشتریان وفادار</a>
+                                <a href="#" class="flink">درباره ما</a>
+                                <a href="#" class="flink">تماس با ما</a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center">
+                <hr class="hr" >
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="social-links">
+                        <div class="p-1 flex-grow-1">
+                            <div class="col-md-6 col-sm-12">
+                                <div class="d-flex flex-column social-one">
+                                    <div class="p-1 note-one text-center">
+                                        <p style="color:white"> ژاکت در شبکه های اجتماعی</p>
+                                    </div>
+                                    <div class="p-1 note-one">
+                                        <a href="#" class="fa fa-facebook"></a>
+                                        <a href="#" class="fa fa-twitter"></a>
+                                        <a href="#" class="fa fa-linkedin"></a>
+                                        <a href="#" class="fa fa-instagram"></a>
+                                        <a href="#" class="fa fa-google"></a>
+                                    </div>
+                                </div>        
+                            </div>
+
+                        </div>
+                        <div class="p-1">
+                            <div class="col-md-6 col-sm-12">
+                                <div class="last-img">
+                                    <div class="p-1 ml-auto">
+                                        <img src="imgs/e-namad.svg">
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+            
+           
+        </footer>
+
+
+
+        
+        
+        
+    <script src="Task-3.js" type="text/javascript"></script>
+    <script src="swiper.js" type="text/javascript"></script>   
+    <script src="sidebar.js" type="text/javascript"></script>
+    </body>
+   
+</html>
